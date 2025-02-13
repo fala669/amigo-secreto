@@ -28,7 +28,16 @@ function mostrarLista(){
     }
 }
 
-
+function sortearAmigo(){
+    let cantidadAmigos = Amigos.length;
+    if(cantidadAmigos == 0){
+        alert('Por favor ingrese amigos');
+    } else{
+        let indiceAmigo = Math.floor(Math.random() * cantidadAmigos);
+        let resultadoHTML = document.querySelector('#resultado');
+        resultadoHTML.innerHTML = Amigos[indiceAmigo]; 
+    }
+}
 
 
 
